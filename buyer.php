@@ -57,3 +57,44 @@ echo '<br>';
 $objEmployeeTwo = new Comprador('John', 'Smith', 34, 'bob123@gmail.com', 923607575);
 
 echo $objEmployeeTwo->getFirstName(); // prints 'John'
+
+
+
+// Objects for the class Buyer
+
+$objEmployeeThree = new Comprador('DiCaprio', 'DaVinci', 33, 'bob123@gmail.com', 923607575);
+
+echo $objEmployeeThree->getFirstName(); // prints 'John'
+echo " "; 
+echo $objEmployeeThree->getLastName(); // prints 'Smith' 
+echo " ";
+echo $objEmployeeThree->getAge(); // prints '34'
+echo "/ ";
+echo $objEmployeeThree->getEmail(); // prints '34'
+echo "/ ";
+echo $objEmployeeThree->getMnumber(); // prints '34'
+echo '<br>';
+
+$a='Bob';
+$b='Sense';
+$c=2500;
+$d='bob123@gmail.com';
+$e=923607575;
+
+$newPayee = new Comprador($a, $b, $c, $d, $e);
+
+echo $newPayee->getFirstName(); // prints 'Bob'
+echo " "; 
+echo $newPayee->getLastName(); // prints 'Sense' 
+echo " ";
+echo $newPayee->getAge(); // prints '2500'
+echo "/ ";
+echo $newPayee->getEmail(); // prints 'bob123@gmail.com'
+echo "/ ";
+echo $newPayee->getMnumber(); // prints '923607579'
+echo '<br>';
+echo '<br><br>'; 
+
+$pagamento=$newPayee->getAge() * 7; // Nova funcao a ser alterada e utilizada a poster, servindo somente de teste
+
+echo $pagamento;
