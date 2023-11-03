@@ -39,7 +39,8 @@ class Comprador
 ?>
 
 <?php
-$objEmployeeOne = new Comprador('Bob', 'Smith', 30, 'bob123@gmail.com', 923607575);
+$objEmployeeOne = new Comprador('Bob', 'Smith', 30, 'bob123@gmail.com', 923607575);//Object class Comprador as test data
+$objEmployeeTwoDB = new Comprador('Mac', 'Fotens', 28, 'mcfontes15@gmail.com', 923605755); //
 
 echo $objEmployeeOne->getFirstName(); // prints 'Bob' 
 echo " ";
@@ -50,7 +51,9 @@ echo "/ ";
 echo $objEmployeeOne->getEmail(); // prints '34'
 echo "/ ";
 echo $objEmployeeOne->getMnumber(); // prints '34'
-echo '<br>'; 
+echo '<br>';
+echo $objEmployeeOne->getMnumber(); // prints '34'
+echo '<br>';
 
 //
 
@@ -72,7 +75,7 @@ echo $objEmployeeThree->getAge(); // prints '34'
 echo "/ ";
 echo $objEmployeeThree->getEmail(); // prints '34'
 echo "/ ";
-echo $objEmployeeThree->getMnumber(); // prints '34'
+echo $objEmployeeThree->getEmail(); // prints '34'
 echo '<br>';
 
 $a='Bob';
